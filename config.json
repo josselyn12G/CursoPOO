@@ -1,0 +1,7 @@
+{
+    "nameServer":".\\SQLEXPRESS",
+    "database":"UDEMYTEST1",
+    "username": "pythonconsultor",
+    "password": "UDLA",
+    "controladorODBC": "SQL Server"
+}
