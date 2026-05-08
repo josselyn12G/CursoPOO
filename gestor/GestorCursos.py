@@ -15,13 +15,8 @@ class GestorCursos:
             password = config["password"]
             controlador_odbc = config["controladorODBC"]
 
-            self.connection_string = (
-                f"DRIVER={controlador_odbc};"
-                f"SERVER={name_server};"
-                f"DATABASE={database};"
-                f"UID={username};"
-                f"PWD={password}"
-            )
+            self.connection_string = f'DRIVER={controlador_odbc};SERVER={name_server};DATABASE={database};UID={username};PWD={password}'
+
 
             self.conexion = pyodbc.connect(self.connection_string)
             print("\nConexión exitosa a la base de datos.\n")
